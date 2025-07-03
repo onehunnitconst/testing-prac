@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sql:
+    image: postgres:16.3
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: sangsu
+      POSTGRES_PASSWORD: sangsu
+      POSTGRES_DB: sangsu
+      PGDATA: /var/lib/postgresql/data/pgdata
